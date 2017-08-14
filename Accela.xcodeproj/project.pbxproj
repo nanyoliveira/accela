@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		69620B891F4219170023918B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620B881F4219170023918B /* main.m */; };
 		69620B8C1F4219170023918B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620B8B1F4219170023918B /* AppDelegate.m */; };
-		69620B8F1F4219170023918B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620B8E1F4219170023918B /* ViewController.m */; };
 		69620B921F4219170023918B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69620B901F4219170023918B /* Main.storyboard */; };
 		69620B941F4219170023918B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69620B931F4219170023918B /* Assets.xcassets */; };
 		69620B971F4219170023918B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69620B951F4219170023918B /* LaunchScreen.storyboard */; };
+		69620BA01F4219BD0023918B /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620B9F1F4219BD0023918B /* UserDetailViewController.m */; };
+		69620BA41F421A400023918B /* UsersListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620BA31F421A400023918B /* UsersListTableViewController.m */; };
+		69620BA71F421B000023918B /* UsersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620BA61F421B000023918B /* UsersTableViewCell.m */; };
+		69620BAB1F421B8A0023918B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620BAA1F421B8A0023918B /* User.m */; };
+		69620BAE1F421FD50023918B /* APICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 69620BAD1F421FD50023918B /* APICall.m */; };
+		874954DD4A4201BA1ED41AFB /* libPods-Accela.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F7114D61ADB79AF5EFE8C8 /* libPods-Accela.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,23 @@
 		69620B881F4219170023918B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69620B8A1F4219170023918B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69620B8B1F4219170023918B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		69620B8D1F4219170023918B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		69620B8E1F4219170023918B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		69620B911F4219170023918B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69620B931F4219170023918B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69620B961F4219170023918B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69620B981F4219170023918B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69620B9E1F4219BD0023918B /* UserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDetailViewController.h; path = view/UserDetailViewController.h; sourceTree = "<group>"; };
+		69620B9F1F4219BD0023918B /* UserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDetailViewController.m; path = view/UserDetailViewController.m; sourceTree = "<group>"; };
+		69620BA21F421A400023918B /* UsersListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsersListTableViewController.h; path = view/UsersListTableViewController.h; sourceTree = "<group>"; };
+		69620BA31F421A400023918B /* UsersListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsersListTableViewController.m; path = view/UsersListTableViewController.m; sourceTree = "<group>"; };
+		69620BA51F421B000023918B /* UsersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsersTableViewCell.h; path = view/UsersTableViewCell.h; sourceTree = "<group>"; };
+		69620BA61F421B000023918B /* UsersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsersTableViewCell.m; path = view/UsersTableViewCell.m; sourceTree = "<group>"; };
+		69620BA91F421B8A0023918B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = model/User.h; sourceTree = "<group>"; };
+		69620BAA1F421B8A0023918B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = model/User.m; sourceTree = "<group>"; };
+		69620BAC1F421FD50023918B /* APICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APICall.h; path = api/APICall.h; sourceTree = "<group>"; };
+		69620BAD1F421FD50023918B /* APICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APICall.m; path = api/APICall.m; sourceTree = "<group>"; };
+		B6F7114D61ADB79AF5EFE8C8 /* libPods-Accela.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Accela.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9057459FD59F2619CE665F /* Pods-Accela.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accela.release.xcconfig"; path = "Pods/Target Support Files/Pods-Accela/Pods-Accela.release.xcconfig"; sourceTree = "<group>"; };
+		E718956191B2E1F394BA1C5D /* Pods-Accela.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accela.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Accela/Pods-Accela.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874954DD4A4201BA1ED41AFB /* libPods-Accela.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				69620B861F4219170023918B /* Accela */,
 				69620B851F4219170023918B /* Products */,
+				7ADEBCC1C97B53E0F5916B53 /* Pods */,
+				E08EC829A01EC3EBD234FAB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +77,16 @@
 		69620B861F4219170023918B /* Accela */ = {
 			isa = PBXGroup;
 			children = (
-				69620B8A1F4219170023918B /* AppDelegate.h */,
+				69620BA81F421B620023918B /* model */,
+				69620BA11F4219C10023918B /* view */,
 				69620B8B1F4219170023918B /* AppDelegate.m */,
-				69620B8D1F4219170023918B /* ViewController.h */,
-				69620B8E1F4219170023918B /* ViewController.m */,
+				69620B8A1F4219170023918B /* AppDelegate.h */,
 				69620B901F4219170023918B /* Main.storyboard */,
 				69620B931F4219170023918B /* Assets.xcassets */,
 				69620B951F4219170023918B /* LaunchScreen.storyboard */,
 				69620B981F4219170023918B /* Info.plist */,
 				69620B871F4219170023918B /* Supporting Files */,
+				69620BAF1F421FDE0023918B /* api */,
 			);
 			path = Accela;
 			sourceTree = "<group>";
@@ -79,6 +99,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		69620BA11F4219C10023918B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				69620B9E1F4219BD0023918B /* UserDetailViewController.h */,
+				69620B9F1F4219BD0023918B /* UserDetailViewController.m */,
+				69620BA21F421A400023918B /* UsersListTableViewController.h */,
+				69620BA31F421A400023918B /* UsersListTableViewController.m */,
+				69620BA51F421B000023918B /* UsersTableViewCell.h */,
+				69620BA61F421B000023918B /* UsersTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		69620BA81F421B620023918B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				69620BA91F421B8A0023918B /* User.h */,
+				69620BAA1F421B8A0023918B /* User.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		69620BAF1F421FDE0023918B /* api */ = {
+			isa = PBXGroup;
+			children = (
+				69620BAC1F421FD50023918B /* APICall.h */,
+				69620BAD1F421FD50023918B /* APICall.m */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		7ADEBCC1C97B53E0F5916B53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E718956191B2E1F394BA1C5D /* Pods-Accela.debug.xcconfig */,
+				CD9057459FD59F2619CE665F /* Pods-Accela.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E08EC829A01EC3EBD234FAB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F7114D61ADB79AF5EFE8C8 /* libPods-Accela.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69620B9B1F4219170023918B /* Build configuration list for PBXNativeTarget "Accela" */;
 			buildPhases = (
+				77529ABB8F78D6993E49DDFF /* [CP] Check Pods Manifest.lock */,
 				69620B801F4219170023918B /* Sources */,
 				69620B811F4219170023918B /* Frameworks */,
 				69620B821F4219170023918B /* Resources */,
+				CDE5280CE78CE72BF6789B35 /* [CP] Embed Pods Frameworks */,
+				986918BB054F0CC5879B2ED2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +217,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77529ABB8F78D6993E49DDFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		986918BB054F0CC5879B2ED2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Accela/Pods-Accela-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE5280CE78CE72BF6789B35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Accela/Pods-Accela-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69620B801F4219170023918B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69620B8F1F4219170023918B /* ViewController.m in Sources */,
+				69620BA71F421B000023918B /* UsersTableViewCell.m in Sources */,
+				69620BAE1F421FD50023918B /* APICall.m in Sources */,
 				69620B8C1F4219170023918B /* AppDelegate.m in Sources */,
+				69620BAB1F421B8A0023918B /* User.m in Sources */,
+				69620BA01F4219BD0023918B /* UserDetailViewController.m in Sources */,
+				69620BA41F421A400023918B /* UsersListTableViewController.m in Sources */,
 				69620B891F4219170023918B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +396,7 @@
 		};
 		69620B9C1F4219170023918B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E718956191B2E1F394BA1C5D /* Pods-Accela.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QRJ893TJ32;
@@ -285,6 +409,7 @@
 		};
 		69620B9D1F4219170023918B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9057459FD59F2619CE665F /* Pods-Accela.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QRJ893TJ32;
