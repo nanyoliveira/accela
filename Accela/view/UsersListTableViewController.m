@@ -37,13 +37,8 @@ static int loadAvailable = 20;
     self.api = [[APICall alloc]init];
     self.api.delegate = self;
 
-//    [self.api callAPI:0 from:loadAvailable];
+    [self.api callAPI:0 from:loadAvailable];
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - API
@@ -72,9 +67,10 @@ static int loadAvailable = 20;
     [self presentViewController:alert animated:YES completion:nil];
 
 }
+
+
+
 #pragma mark - Scrolls
-
-
 
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
